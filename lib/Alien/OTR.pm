@@ -6,7 +6,7 @@ package Alien::OTR;
 BEGIN {
   $Alien::OTR::AUTHORITY = 'cpan:AJGB';
 }
-$Alien::OTR::VERSION = '4.0.0.0';
+$Alien::OTR::VERSION = '4.0.0.1';
 use parent 'Alien::Base';
 
 1;
@@ -15,7 +15,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -23,7 +23,7 @@ Alien::OTR - Install and make available libotr v4 library
 
 =head1 VERSION
 
-version 4.0.0.0
+version 4.0.0.1
 
 =head1 SYNOPSIS
 

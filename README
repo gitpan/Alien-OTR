@@ -2,7 +2,7 @@ NAME
     Alien::OTR - Install and make available libotr v4 library
 
 VERSION
-    version 4.0.0.0
+    version 4.0.0.1
 
 SYNOPSIS
         use Alien::OTR;

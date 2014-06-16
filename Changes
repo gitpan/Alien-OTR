@@ -1,5 +1,9 @@
 Revision history for Perl extension Alien::OTR.
 
+4.0.0.1 2014-06-16 01:27:50
+    Use latest devel branch of libotr.
+    Add patch to free memory of context->context_priv.
+
 4.0.0.0 2014-02-04 00:24:20
 	Initial version.
 

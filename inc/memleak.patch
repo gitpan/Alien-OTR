@@ -1,0 +1,16 @@
+diff -ur libotr.orig/src/context.c libotr/src/context.c
+--- libotr.orig/src/context.c	2014-06-13 23:50:16.000000000 +0100
++++ libotr/src/context.c	2014-06-16 00:03:55.000000000 +0100
+@@ -510,10 +510,12 @@
+     free(context->accountname);
+     free(context->protocol);
+     free(context->smstate);
++    free(context->context_priv);
+     context->username = NULL;
+     context->accountname = NULL;
+     context->protocol = NULL;
+     context->smstate = NULL;
++    context->context_priv = NULL;
+ 
+     /* Free the application data, if it exists */
+     if (context->app_data && context->app_data_free) {
