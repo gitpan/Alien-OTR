@@ -20,6 +20,8 @@ meta-spec:
 name: Alien-OTR
 requires:
   Alien::Base: '0.002'
+  Alien::GCrypt: '0'
+  Alien::GPG::Error: '0'
   File::ShareDir: '1.03'
   parent: '0'
   strict: '0'
@@ -28,7 +30,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Alien-OTR
   homepage: http://search.cpan.org/dist/Alien-OTR
   repository: git://github.com/ajgb/alien-otr.git
-version: 4.0.0.1
+version: 4.1.0.0
 x_Dist_Zilla:
   perl:
     version: '5.018002'
@@ -94,10 +96,6 @@ x_Dist_Zilla:
             - ':ExecFiles'
       name: '@Filter/NoTabsTests'
       version: '0.06'
-    -
-      class: Dist::Zilla::Plugin::KwaliteeTests
-      name: '@Filter/KwaliteeTests'
-      version: '1.101420'
     -
       class: Dist::Zilla::Plugin::PruneCruft
       name: '@Filter/PruneCruft'

@@ -9,8 +9,7 @@ use lib qw{inc}; use Alien::Base::ModuleBuild;
 my %module_build_args = (
   "alien_build_commands" => [
     "patch -p1 < ../../inc/memleak.patch",
-    "%p./bootstrap",
-    "%pconfigure --with-pic --prefix=%s"
+    "%p../../inc/configure.pl --with-pic --prefix=%s"
   ],
   "alien_install_commands" => [
     "make install"
@@ -32,13 +31,15 @@ my %module_build_args = (
     "Alex J. G. Burzy\x{144}ski <ajgb\@cpan.org>"
   ],
   "dist_name" => "Alien-OTR",
-  "dist_version" => "4.0.0.1",
+  "dist_version" => "4.1.0.0",
   "license" => "perl",
   "module_name" => "Alien::OTR",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
     "Alien::Base" => "0.002",
+    "Alien::GCrypt" => 0,
+    "Alien::GPG::Error" => 0,
     "File::ShareDir" => "1.03",
     "parent" => 0,
     "strict" => 0,

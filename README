@@ -2,7 +2,7 @@ NAME
     Alien::OTR - Install and make available libotr v4 library
 
 VERSION
-    version 4.0.0.1
+    version 4.1.0.0
 
 SYNOPSIS
         use Alien::OTR;
@@ -11,7 +11,7 @@ SYNOPSIS
         my $libs = Alien::OTR->libs;
 
 DESCRIPTION
-    Alien::OTR installs the C library "libotr" version v4.0.0.
+    Alien::OTR installs the C library "libotr" version v4.1.0.
 
 SEE ALSO
     *   <https://otr.cypherpunks.ca/>

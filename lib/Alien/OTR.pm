@@ -6,7 +6,10 @@ package Alien::OTR;
 BEGIN {
   $Alien::OTR::AUTHORITY = 'cpan:AJGB';
 }
-$Alien::OTR::VERSION = '4.0.0.1';
+$Alien::OTR::VERSION = '4.1.0.0';
+use Alien::GCrypt;
+use Alien::GPG::Error;
+
 use parent 'Alien::Base';
 
 1;
@@ -23,7 +26,7 @@ Alien::OTR - Install and make available libotr v4 library
 
 =head1 VERSION
 
-version 4.0.0.1
+version 4.1.0.0
 
 =head1 SYNOPSIS
 
@@ -34,7 +37,7 @@ version 4.0.0.1
 
 =head1 DESCRIPTION
 
-Alien::OTR installs the C library C<libotr> version v4.0.0.
+Alien::OTR installs the C library C<libotr> version v4.1.0.
 
 =head1 SEE ALSO
 

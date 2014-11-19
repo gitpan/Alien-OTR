@@ -32,6 +32,8 @@
       "runtime" : {
          "requires" : {
             "Alien::Base" : "0.002",
+            "Alien::GCrypt" : "0",
+            "Alien::GPG::Error" : "0",
             "File::ShareDir" : "1.03",
             "parent" : "0",
             "strict" : "0",
@@ -61,7 +63,7 @@
          "web" : "https://github.com/ajgb/alien-otr"
       }
    },
-   "version" : "4.0.0.1",
+   "version" : "4.1.0.0",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018002"
@@ -147,11 +149,6 @@
             },
             "name" : "@Filter/NoTabsTests",
             "version" : "0.06"
-         },
-         {
-            "class" : "Dist::Zilla::Plugin::KwaliteeTests",
-            "name" : "@Filter/KwaliteeTests",
-            "version" : "1.101420"
          },
          {
             "class" : "Dist::Zilla::Plugin::PruneCruft",
